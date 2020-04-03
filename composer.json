@@ -1,0 +1,24 @@
+{
+    "name": "xedds/mig",
+    "description": "php database migration package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "eslamradi",
+            "email": "eslamradii@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "version":"0.0.1",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Mig\\": "src/"
+        }
+    },
+    "scripts": {
+        "publish": [
+            "Mig\\Installer::publish"
+        ]
+    }
+}
