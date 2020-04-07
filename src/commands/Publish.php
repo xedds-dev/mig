@@ -12,7 +12,7 @@ class Publish extends Command
 		if(! empty($params['path'])){
 			$path = $params['path'];
 		}
-		$this->cpdir('vendor/xedds-dev/mig', $params['path']);
+		$this->cpdir('vendor/xedds-dev/mig', $path);
 	}
 
 	function help(){
