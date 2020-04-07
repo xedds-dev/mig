@@ -9,5 +9,5 @@ return [
     'migrate' => '\Mig\Commands\Migrate',
     'rollback' => '\Mig\Commands\Rollback',
     'help' => '\Mig\Commands\Help',
-    'setup' => '\Mig\Commands\Setup'
+    'publish' => '\Mig\Commands\Publish'
 ];
