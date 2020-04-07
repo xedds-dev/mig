@@ -18,7 +18,7 @@
     },
     "scripts": {
         "publish": [
-            "Mig\\Installer::publish"
+            "cp src/app/mig ../../../../../mig"
         ]
     }
 }
