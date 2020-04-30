@@ -8,11 +8,12 @@ class Publish extends Command
 {
 	function run($params = [])
 	{
-		$path = "";
+		$path = "migrations";
 		if(! empty($params['path'])){
 			$path = $params['path'];
 		}
-		$this->cpdir('vendor/xedds-dev/mig', $path);
+		$this->cpdir(__DIR__ . '/../app', $path);
+		copy(__DIR__ . '/../mig-settings.php', 'mig-settings.php');
 	}
 
 	function help(){
@@ -25,9 +26,8 @@ class Publish extends Command
 		$dir = opendir($src);  
 	  
 		// Make the destination directory if not exist 
-		@mkdir($dst);  
-	  
-		// Loop through the files in source directory 
+		@mkdir($dst);
+		// Loop through the files in source directory
 		while( $file = readdir($dir) ) {  
 	  
 			if (( $file != '.' ) && ( $file != '..' )) {  
@@ -46,5 +46,5 @@ class Publish extends Command
 		}  
 	  
 		closedir($dir); 
-	} 
+	}
 }

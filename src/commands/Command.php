@@ -13,7 +13,7 @@ abstract class Command
 	}
 
 	function process($params = []){
-		$this->printer->error('loading..');
+		// $this->printer->error('loading..');
 		if(isset($params['help']) AND $params['help'] == true){
 			return $this->help();
 		}
