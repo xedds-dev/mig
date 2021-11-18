@@ -71,7 +71,7 @@ class Printer
     }
 
     /**
-     * Output text in cyan color as info 
+     * Output text in cyan color as info
      *
      * @param string $text
      * @return void

@@ -1,0 +1,25 @@
+<?php
+
+use Mig\AbstractMigration;
+use Mig\AbstractMigrator;
+
+class NAME extends AbstractMigration
+{
+    /**
+     * Forword Direction
+     * @param AbstractMigrator $migrator
+     */
+    public function up(AbstractMigrator $migrator)
+    {
+        // up
+    }
+
+    /**
+     * Backword Direction
+     * @param AbstractMigrator $migrator
+     */
+    public function down(AbstractMigrator $migrator)
+    {
+        // down
+    }
+}
